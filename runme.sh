@@ -10,3 +10,7 @@ docker run -d -p"${PORT}:${PORT}" \
            --name wisdom-app \
            --mount type=bind,source="$(pwd)"/truisms.csv,target=/truisms.csv \
            twap:latest
+
+sleep 5
+docker ps 
+
